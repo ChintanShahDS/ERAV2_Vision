@@ -1,5 +1,7 @@
 from tqdm import tqdm
 import torch
+import torch.nn as nn
+import torch.optim as optim
 
 def GetCorrectPredCount(pPrediction, pLabels):
   return pPrediction.argmax(dim=1).eq(pLabels).sum().item()

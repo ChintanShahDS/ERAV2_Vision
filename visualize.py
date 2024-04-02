@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import tochvision
 
 def imshow(img):
     img = img / 2 + 0.5     # unnormalize
