@@ -48,7 +48,12 @@ class Cifar10Dataset(torchvision.datasets.CIFAR10):
             image = transformed["image"]
 
         return image, label
-		
+
+# Function for train and test dataloader
+def dataloader(dataset, dataloader_args):
+    data_loader = torch.utils.data.DataLoader(dataset, **dataloader_args)
+    return data_loader
+    
 # train_transforms = A.Compose(
             # [
                 # A.Normalize(
