@@ -115,7 +115,7 @@ def test(model, device, test_loader, criterion):
     return test_acc, test_loss
 
 # Fast AI method
-def find_maxlr(model):
+def find_maxlr(model,train_loader,test_loader):
 	from torch_lr_finder import LRFinder
 
 	criterion = nn.CrossEntropyLoss()

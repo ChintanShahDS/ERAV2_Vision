@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import tochvision
+import torchvision
 
 def imshow(img):
     img = img / 2 + 0.5     # unnormalize
