@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import torch
 import torchvision
 import albumentations as A
 import cv2
