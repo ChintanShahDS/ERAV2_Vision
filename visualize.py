@@ -43,7 +43,7 @@ def imshowready(img):
     npimg = img.numpy()
     return np.transpose(npimg, (1, 2, 0))
 
-def showIncorrectPreds(numImages, images, incorrectPreds, nonMatchingLabels):
+def showIncorrectPreds(numImages, images, incorrectPreds, nonMatchingLabels,classes):
     for i in range(numImages):
         image = images[i]
         pred = classes[incorrectPreds[i]]
